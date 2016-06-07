@@ -17,3 +17,4 @@ if (!condition1 || condition2) {
 if (!condition1 || condition2 || condition3) {
     alert('Bloc 5!');
 }
+// Fin
