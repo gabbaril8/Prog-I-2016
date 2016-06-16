@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Variables</title>
+</head>
+<body>
+    <h1>Variables</h1>
+    <script>
+        //console.log("blablabla");
+        //console.info("blablabla");
+        //console.warn("blablabla");
+        //console.error("blablabla");
+
+        var chaineDeCharacteres = '\tC\'est l\'été.\nToto\\Titi';
+        console.info(chaineDeCharacteres);
+
+        var number1 = 10;
+        var number2 = 10.5;
+        var number3 = -20;
+        var number4 = -20.75;
+        console.info(number1);
+        console.info(number2);
+        console.info(number3);
+        console.info(number4);
+
+        var b1 = true;
+        var b2 = false;
+        var b3 = true && false;
+        var b4 = b1 || b2;
+        console.info(b1);
+        console.info(b2);
+        console.info(b3);
+        console.info(b4);
+
+        number3 = 10;
+        console.info(number3);
+
+        var toto = (12 + 6) / 4 + 10;
+        //toto = 18 / 4 + 10;
+        //toto = 4.5 + 10;
+        //toto = 14.5;
+        console.info(toto);
+
+        //
+        // Array
+        //
+        console.clear();
+        var a3 = new Array();
+        var a1 = [];
+        var a2 = [1, 2, 3, 4, "toto", "tata"]; // ne pas mixer les types
+
+        //var tousLesH1 = document.getElementsByTagName("h1");
+        //var premierH1 = tousLesH1[0];
+        //console.info(tousLesH1);
+        //console.info(premierH1);
+
+        console.info(a2[2]); // afficher 3
+        console.info(a2[4]); // afficher toto
+
+        console.info(a2[5]); // afficher tata
+        a2[5] = "titi";
+        console.info(a2[5]); // afficher titi
+
+        console.info("PUSH");
+        a2.push("Tutu");
+        console.info(a2);
+
+        console.info("POP");
+        var tutu = a2.pop();
+        console.info(a2);
+        console.info(tutu);
+
+        var r123 = a2.pop() == "titi";
+        //var r123 = "titi" == "titi";
+        //var r123 = true;
+        console.info(a2);
+        console.info(r123);
+
+        //
+        // Concaténation
+        //
+        var str1 = "Allo"
+        var str2 = "Toto"
+        console.info(str1 + ' ' + str2);
+        //console.info("Allo" + ' ' + "Toto");
+        //console.info("Allo Toto");
+        var str3 = str1 + ' ' + str2;
+        console.info(str3);
+
+        //
+        // Comparaison
+        //
+        var c1 = str1 == "ASDF";
+        var c2 = 5 > 10;
+
+        var x = 12;
+        var y = 2;
+        var c3 = x + y >= 14;
+        //var c3 = 12 + 2 >= 14;
+        //var c3 = 14 >= 14;
+        //var c3 = true;
+
+
+        // pre-post
+        var z1 = x++ == 13;
+        //var z1 = (12 == 13); //-> x = x + 1;
+        // x = 13
+        var z2 = ++x == 14;
+        //var z2 = 14 == 14;
+        //var z2 = true;
+</script>
+</body>
+</html>
